@@ -330,23 +330,16 @@ h2 {
 
 .music-toggle {
   font: inherit;
-  color: var(--accent);
-  background: transparent;
-  border: 1px solid #bed4ff;
-  border-radius: 999px;
-  padding: 0.28rem 0.72rem;
   cursor: pointer;
-  line-height: 1.2;
+  font-size: 0.86rem;
 }
 
-.music-toggle:hover {
-  background: var(--accent-soft);
-  border-color: #9ec0ff;
+.music-more-head {
+  margin: 1.15rem 0 0.6rem;
 }
 
-.music-toggle:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.22);
+.music-more-head .music-subhead {
+  margin: 0;
 }
 
 .music-history-grid {
