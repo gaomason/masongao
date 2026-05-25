@@ -114,7 +114,7 @@ h2 {
 }
 
 .profile-photo {
-  width: clamp(84px, 14vw, 110px);
+  width: clamp(64px, 10vw, 88px);
   aspect-ratio: 1 / 1;
   object-fit: cover;
   border-radius: 999px;
