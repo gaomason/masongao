@@ -301,8 +301,7 @@ h2 {
 }
 
 .visitor-counter {
-  margin: 0.1rem 0 0;
-  color: var(--muted);
+  margin: 0.25rem 0 0;
   font-size: 0.92rem;
 }
 
