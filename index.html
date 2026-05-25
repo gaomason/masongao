@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mason Gao</title>
+    <meta
+      name="description"
+      content="Personal and professional website for Mason Gao."
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="/">Mason Gao</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="active" href="/">Home</a>
+          <a href="professional/">Professional / Research</a>
+          <a href="personal/">Personal</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <p class="eyebrow">Welcome</p>
+        <h1>Professional introduction</h1>
+        <p class="lead">
+          This is the homepage intro section. Replace this text with your
+          concise professional profile, current role, and key interests.
+        </p>
+        <p>
+          You can also add a short mission statement here and link visitors to
+          your research and personal pages.
+        </p>
+        <div class="hero-actions">
+          <a class="button" href="professional/">Explore research</a>
+          <a class="button button-secondary" href="personal/"
+            >Visit personal page</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Mason Gao</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

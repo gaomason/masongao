@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Photo Archive | Mason Gao</title>
+    <meta name="description" content="Archived personal photos by Mason Gao." />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="../">Mason Gao</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="../">Home</a>
+          <a href="../professional/">Professional / Research</a>
+          <a class="active" href="./">Personal</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-content">
+      <section class="section">
+        <h1>Photo archive</h1>
+        <p>
+          Add previously uploaded images here. Replace placeholders with your
+          actual image files and captions.
+        </p>
+      </section>
+
+      <section class="section photo-grid">
+        <article class="card photo-card">
+          <img src="../assets/images/current-photo.svg" alt="Archive placeholder 1" />
+          <h2>Photo title 1</h2>
+          <p class="meta">May 2026</p>
+        </article>
+        <article class="card photo-card">
+          <img src="../assets/images/current-photo.svg" alt="Archive placeholder 2" />
+          <h2>Photo title 2</h2>
+          <p class="meta">April 2026</p>
+        </article>
+        <article class="card photo-card">
+          <img src="../assets/images/current-photo.svg" alt="Archive placeholder 3" />
+          <h2>Photo title 3</h2>
+          <p class="meta">March 2026</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Mason Gao</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

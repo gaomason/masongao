@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Thought Log | Mason Gao</title>
+    <meta name="description" content="All thought log posts by Mason Gao." />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="../">Mason Gao</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="../">Home</a>
+          <a href="../professional/">Professional / Research</a>
+          <a class="active" href="./">Personal</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-content">
+      <section class="section">
+        <h1>Thought log</h1>
+        <p>All posts are listed here in reverse chronological order.</p>
+      </section>
+
+      <section class="section card">
+        <ul id="all-posts" class="post-list"></ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Mason Gao</p>
+      </div>
+    </footer>
+
+    <script src="../assets/js/posts.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      renderAllPosts("all-posts");
+    </script>
+  </body>
+</html>
