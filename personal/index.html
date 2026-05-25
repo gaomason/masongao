@@ -106,8 +106,18 @@
           </article>
         </div>
 
-        <h3 class="music-subhead">More songs</h3>
-        <div class="spotify-wrap spotify-wrap-playlist">
+        <h3 class="music-subhead">
+          <button
+            id="more-songs-toggle"
+            class="music-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="more-songs-playlist"
+          >
+            More songs
+          </button>
+        </h3>
+        <div id="more-songs-playlist" class="spotify-wrap spotify-wrap-playlist" hidden>
           <iframe
             src="https://open.spotify.com/embed/playlist/2pxHZhlh8ywOaadtOxT7f4?si=d2f5041cbbf841a7"
             width="100%"
@@ -155,6 +165,14 @@
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
       renderRecentPosts("recent-posts", 5);
+      const moreSongsToggle = document.getElementById("more-songs-toggle");
+      const moreSongsPlaylist = document.getElementById("more-songs-playlist");
+
+      moreSongsToggle.addEventListener("click", () => {
+        const isExpanded = moreSongsToggle.getAttribute("aria-expanded") === "true";
+        moreSongsToggle.setAttribute("aria-expanded", String(!isExpanded));
+        moreSongsPlaylist.hidden = isExpanded;
+      });
     </script>
   </body>
 </html>

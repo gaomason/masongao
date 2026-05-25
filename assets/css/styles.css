@@ -328,9 +328,30 @@ h2 {
   font-size: 1rem;
 }
 
+.music-toggle {
+  font: inherit;
+  color: var(--accent);
+  background: transparent;
+  border: 1px solid #bed4ff;
+  border-radius: 999px;
+  padding: 0.28rem 0.72rem;
+  cursor: pointer;
+  line-height: 1.2;
+}
+
+.music-toggle:hover {
+  background: var(--accent-soft);
+  border-color: #9ec0ff;
+}
+
+.music-toggle:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.22);
+}
+
 .music-history-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 0.75rem;
   margin-bottom: 0.8rem;
 }
@@ -347,7 +368,7 @@ h2 {
 
 .spotify-wrap-small iframe {
   display: block;
-  height: 112px;
+  height: 152px;
 }
 
 .spotify-wrap-playlist iframe {
