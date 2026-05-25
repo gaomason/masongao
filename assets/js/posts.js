@@ -1,33 +1,8 @@
 const posts = [
   {
-    title: "Research note placeholder",
-    date: "2026-05-20",
-    body: "Replace this with a short thought or observation."
-  },
-  {
-    title: "What I am learning this week",
-    date: "2026-05-16",
-    body: "Add a reflection on ideas, papers, or experiments."
-  },
-  {
-    title: "A useful question for today",
-    date: "2026-05-11",
-    body: "Write a question that is guiding your current thinking."
-  },
-  {
-    title: "Interesting conversation recap",
-    date: "2026-05-07",
-    body: "Capture one key takeaway from a recent discussion."
-  },
-  {
-    title: "Small win",
-    date: "2026-05-03",
-    body: "Document one small achievement or useful insight."
-  },
-  {
-    title: "Reference note",
-    date: "2026-04-28",
-    body: "Store a reference or quote that you want to revisit."
+    title: "Hello World",
+    date: "2026-04-20",
+    body: "My website is now live!"
   }
 ];
 
