@@ -176,7 +176,7 @@ h2 {
 }
 
 .current-photo-image {
-  width: min(100%, 320px);
+  width: min(100%, 160px);
   aspect-ratio: 1 / 1;
   object-fit: contain;
   padding: 0.35rem;
