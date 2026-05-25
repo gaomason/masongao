@@ -113,6 +113,16 @@ h2 {
   max-width: 62ch;
 }
 
+.profile-photo {
+  width: min(220px, 60vw);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  display: block;
+  margin: 0 0 1.25rem;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
