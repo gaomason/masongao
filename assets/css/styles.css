@@ -113,6 +113,15 @@ h2 {
   max-width: 62ch;
 }
 
+.profile-photo-frame {
+  width: min(100%, 62ch);
+  margin: 0 0 1rem;
+  padding: 0.5rem 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
 .profile-photo {
   width: clamp(64px, 10vw, 88px);
   aspect-ratio: 1 / 1;
@@ -123,7 +132,7 @@ h2 {
   border: 1px solid #b9c7da;
   box-shadow: 0 8px 20px rgba(31, 41, 55, 0.14);
   display: block;
-  margin: 0 0 1rem;
+  margin: 0;
 }
 
 .hero-actions {
