@@ -300,23 +300,9 @@ h2 {
   height: 112px;
 }
 
-.music-archive-details {
-  margin-top: 0.9rem;
-  border-top: 1px solid var(--line);
-  padding-top: 0.8rem;
-}
-
-.music-archive-details summary {
-  cursor: pointer;
-  color: var(--accent);
-  font-weight: 500;
-}
-
-.music-archive-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 0.85rem;
-  margin-top: 0.85rem;
+.spotify-wrap-playlist iframe {
+  display: block;
+  height: 352px;
 }
 
 .post-list {
