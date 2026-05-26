@@ -369,15 +369,44 @@ h2 {
   height: 352px;
 }
 
-.goodreads-embed {
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  background: #ffffff;
-  padding: 0.75rem;
+#customize-list {
+  float: left;
+  margin-left: 20px;
+  list-style: none;
 }
 
-.goodreads-embed #gr_custom_widget_166388904 {
-  width: 100%;
+#gr_updates_widget {
+  float: left;
+  border-radius: 5px;
+  background-color: #fff;
+  border: solid #683205 10px;
+  -webkit-box-shadow: 0 0 4px 1px #595959, inset 0 0 0 1px #7d730b;
+  -moz-box-shadow: 0 0 4px 1px #595959, inset 0 0 0 1px #7d730b;
+  box-shadow: 0 0 4px 1px #595959, inset 0 0 0 1px #7d730b;
+  padding: 15px 0 0 15px;
+  width: 500px;
+  height: 215px;
+  max-width: 100%;
+}
+
+#gr_updates_widget p {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+#gr_footer {
+  margin-bottom: 0;
+  height: 30px;
+}
+
+#gr_footer img {
+  width: 100px;
+  float: left;
+}
+
+#the_iframe {
+  max-width: 100%;
 }
 
 .post-list {
@@ -461,5 +490,16 @@ h2 {
   .pdf-embed {
     height: 72vh;
     min-height: 560px;
+  }
+
+  #gr_updates_widget {
+    width: 100%;
+    height: auto;
+    float: none;
+    padding-right: 15px;
+  }
+
+  #the_iframe {
+    width: 100%;
   }
 }
