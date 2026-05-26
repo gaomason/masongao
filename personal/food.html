@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Food | Mason Gao</title>
+    <meta name="description" content="Recent food photos by Mason Gao." />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="../">Mason Gao</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="../">Home</a>
+          <a href="../professional/">Professional / Research</a>
+          <a class="active" href="./">Personal</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-content">
+      <section class="section">
+        <h1>Food</h1>
+      </section>
+
+      <section class="section photo-grid">
+        <article class="card photo-card">
+          <img src="../assets/images/Minimal.jpg" alt="Minimal ice cream" />
+          <p class="photo-caption">Minimal. 8/2025</p>
+        </article>
+        <article class="card photo-card">
+          <img src="../assets/images/HongShaoRou.jpg" alt="Hong shao rou" />
+          <p class="photo-caption">Hong shao rou. 7/2024</p>
+        </article>
+        <article class="card photo-card">
+          <img src="../assets/images/Cake.jpg" alt="Birthday cake" />
+          <p class="photo-caption">Birthday cake. 10/2024</p>
+        </article>
+        <article class="card photo-card">
+          <img src="../assets/images/Thanksgiving.jpg" alt="Thanksgiving meal" />
+          <p class="photo-caption">Thanksgiving. 11/2023</p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Mason Gao</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

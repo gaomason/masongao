@@ -369,6 +369,17 @@ h2 {
   height: 352px;
 }
 
+.goodreads-embed {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 0.75rem;
+}
+
+.goodreads-embed #gr_custom_widget_166388904 {
+  width: 100%;
+}
+
 .post-list {
   list-style: none;
   padding: 0;
