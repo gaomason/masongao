@@ -376,17 +376,18 @@ h2 {
 }
 
 #gr_updates_widget {
-  float: left;
+  float: none;
   border-radius: 5px;
   background-color: #fff;
   border: solid #683205 10px;
   -webkit-box-shadow: 0 0 4px 1px #595959, inset 0 0 0 1px #7d730b;
   -moz-box-shadow: 0 0 4px 1px #595959, inset 0 0 0 1px #7d730b;
   box-shadow: 0 0 4px 1px #595959, inset 0 0 0 1px #7d730b;
-  padding: 15px 0 0 15px;
-  width: 700px;
-  height: 215px;
+  padding: 15px 15px 0 15px;
+  width: 100%;
   max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
 }
 
 #gr_updates_widget p {
@@ -406,7 +407,10 @@ h2 {
 }
 
 #the_iframe {
+  display: block;
+  width: 100%;
   max-width: 100%;
+  border: 0;
 }
 
 .post-list {
@@ -496,7 +500,6 @@ h2 {
     width: 100%;
     height: auto;
     float: none;
-    padding-right: 15px;
   }
 
   #the_iframe {
