@@ -158,7 +158,7 @@
           <iframe
             sandbox
             id="the_iframe"
-            src="https://goodreads.com/widgets/user_update_widget?height=250&num_updates=2&user=166388904&width=100%25"
+            src="https://goodreads.com/widgets/user_update_widget?height=250&num_updates=2&user=166388904&width=700"
             width="100%"
             height="180"
             frameborder="0"
@@ -221,6 +221,7 @@
       renderRecentPosts("recent-posts", 5);
       const moreSongsToggle = document.getElementById("more-songs-toggle");
       const moreSongsPlaylist = document.getElementById("more-songs-playlist");
+      const goodreadsIframe = document.getElementById("the_iframe");
 
       moreSongsToggle.addEventListener("click", () => {
         const isExpanded = moreSongsToggle.getAttribute("aria-expanded") === "true";
@@ -228,6 +229,30 @@
         moreSongsPlaylist.hidden = isExpanded;
         moreSongsToggle.textContent = isExpanded ? "View more" : "View less";
       });
+
+      if (goodreadsIframe) {
+        const goodreadsBaseUrl =
+          "https://goodreads.com/widgets/user_update_widget?height=250&num_updates=2&user=166388904";
+
+        let resizeTimer;
+        const syncGoodreadsWidth = () => {
+          const iframeWidth = Math.max(320, Math.floor(goodreadsIframe.clientWidth));
+          const nextSrc = `${goodreadsBaseUrl}&width=${iframeWidth}`;
+          if (goodreadsIframe.dataset.currentSrc === nextSrc) {
+            return;
+          }
+
+          goodreadsIframe.src = nextSrc;
+          goodreadsIframe.dataset.currentSrc = nextSrc;
+        };
+
+        syncGoodreadsWidth();
+
+        window.addEventListener("resize", () => {
+          clearTimeout(resizeTimer);
+          resizeTimer = setTimeout(syncGoodreadsWidth, 150);
+        });
+      }
     </script>
   </body>
 </html>
