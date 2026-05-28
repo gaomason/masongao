@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Panda Photos | Mason Gao</title>
+    <meta name="description" content="Dog photo archive for Panda." />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="../">Mason Gao</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="../">Home</a>
+          <a href="../professional/">Professional / Research</a>
+          <a class="active" href="./">Personal</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container page-content">
+      <section class="section">
+        <h1>Panda</h1>
+      </section>
+
+      <section class="section photo-grid">
+        <article class="card photo-card">
+          <img src="../assets/images/Panda/Panda1.jpg" alt="Panda photo 1" />
+        </article>
+        <article class="card photo-card">
+          <img src="../assets/images/Panda/Panda2.png" alt="Panda photo 2" />
+        </article>
+        <article class="card photo-card">
+          <img src="../assets/images/Panda/Panda3.jpg" alt="Panda photo 3" />
+        </article>
+        <article class="card photo-card">
+          <img src="../assets/images/Panda/Panda4.jpg" alt="Panda photo 4" />
+        </article>
+        <article class="card photo-card">
+          <img src="../assets/images/Panda/Panda5.jpg" alt="Panda photo 5" />
+        </article>
+        <article class="card photo-card">
+          <img src="../assets/images/Panda/Panda6.jpg" alt="Panda photo 6" />
+        </article>
+        <article class="card photo-card">
+          <img src="../assets/images/Panda/Panda7.jpg" alt="Panda photo 7" />
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Mason Gao</p>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
