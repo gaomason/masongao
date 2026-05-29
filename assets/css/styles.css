@@ -287,6 +287,13 @@ h2 {
     transform 120ms ease, box-shadow 120ms ease;
 }
 
+button.section-head-link {
+  appearance: none;
+  -webkit-appearance: none;
+  font: inherit;
+  cursor: pointer;
+}
+
 .section-head-link:hover {
   background: #dbeafe;
   border-color: #9ec0ff;
