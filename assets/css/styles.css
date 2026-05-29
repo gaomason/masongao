@@ -93,6 +93,17 @@ a:hover {
   margin: 0;
 }
 
+.professional-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.25rem;
+}
+
+.professional-main-content,
+.professional-sidebar {
+  min-width: 0;
+}
+
 @media (min-width: 980px), (orientation: landscape) and (min-width: 860px) {
   .home-main {
     grid-template-columns: minmax(0, 1fr) minmax(290px, 360px);
@@ -101,6 +112,11 @@ a:hover {
 
   .home-main > .home-news {
     margin-top: 2.5rem;
+  }
+
+  .professional-main {
+    grid-template-columns: minmax(0, 1fr) minmax(290px, 360px);
+    align-items: start;
   }
 }
 

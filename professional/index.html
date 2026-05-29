@@ -20,38 +20,49 @@
       </div>
     </header>
 
-    <main class="container page-content">
-      <section class="section">
-        <h1>Professional / Research</h1>
-        <p>
-          I recently graduated from Tufts University with a B.S. in Mathematics,
-          and this August, I will be joining Columbia University as a Ph.D.
-          student in Operations Research. During my undergraduate studies, I
-          worked with Professor Adolfo Escobedo on Exact Linear Programming,
-          which is the focus of my current research, and also worked with
-          Professor James Murphy studying optimal transport theory. 
-        </p>
-        <p>I was
-          recently awarded a NSF Graduate Research Fellowship, for more on that,
-          <a href="grfp.html">please click here</a>.</p>
-      </section>
+    <main class="container page-content professional-main">
+      <div class="professional-main-content">
+        <section class="section">
+          <h1>Professional / Research</h1>
+          <p>
+            I recently graduated from Tufts University with a B.S. in Mathematics,
+            and this August, I will be joining Columbia University as a Ph.D.
+            student in Operations Research. During my undergraduate studies, I
+            worked with Professor Adolfo Escobedo on Exact Linear Programming,
+            which is the focus of my current research, and also worked with
+            Professor James Murphy studying optimal transport theory.
+          </p>
+          <p>
+            I was recently awarded a NSF Graduate Research Fellowship, for more
+            on that, <a href="grfp.html">please click here</a>.
+          </p>
+        </section>
 
-      <section class="section card">
-        <h2>Research Interests</h2>
-        <p>
-          Mathematical optimization/programming, numerical linear algebra, algorithmic game theory (potentially).
-        </p>
-      </section>
+        <section class="section card">
+          <h2>Research Interests</h2>
+          <p>
+            Mathematical optimization/programming, numerical linear algebra, algorithmic game theory (potentially).
+          </p>
+        </section>
 
-      <section class="section card">
-        <h2>Publications</h2>
-        <p>
-          <a href="https://doi.org/10.5281/zenodo.19985115" target="_blank" rel="noopener noreferrer"
-            >Gao, M., Grassel, J. T., & Escobedo, A. R. (2026, March 20). Efficient Multi-Column LU Factorization 
-            Updates for Exact Linear Programming. Refereed Proceedings of the 2026 INFORMS Optimization Society Conference. doi:10.5281/zenodo.19985115</a
-          >
-        </p>
-      </section>
+        <section class="section card">
+          <h2>Publications</h2>
+          <p>
+            <a href="https://doi.org/10.5281/zenodo.19985115" target="_blank" rel="noopener noreferrer"
+              >Gao, M., Grassel, J. T., & Escobedo, A. R. (2026, March 20). Efficient Multi-Column LU Factorization
+              Updates for Exact Linear Programming. Refereed Proceedings of the 2026 INFORMS Optimization Society Conference. doi:10.5281/zenodo.19985115</a
+            >
+          </p>
+        </section>
+      </div>
+
+      <aside class="professional-sidebar">
+        <section class="section card">
+          <h2>Research Log</h2>
+          <p>Most recent note from my ongoing research log.</p>
+          <ul id="research-log" class="post-list"></ul>
+        </section>
+      </aside>
     </main>
 
     <footer class="site-footer">
@@ -60,8 +71,10 @@
       </div>
     </footer>
 
+    <script src="../assets/js/research-log.js"></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
+      renderResearchLog("research-log", 1);
     </script>
   </body>
 </html>
