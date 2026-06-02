@@ -19,194 +19,201 @@
       </div>
     </header>
 
-    <main class="container page-content">
+    <main class="container page-content personal-page">
       <section class="section">
         <h1>Personal</h1>
       </section>
 
-      <section class="section card">
-        <h2>What I'm listening to (Last updated June 2, 2026)</h2>
-        <article class="music-history-item music-history-item-featured">
-          <div class="spotify-wrap spotify-wrap-featured">
-            <iframe
-              src="https://open.spotify.com/embed/track/0Uf0SvwUrf02ucIt1d0Wos?si=467feecce8d84034"
-              width="100%"
-              height="352"
-              frameborder="0"
-              allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-            title="Current favorite song on Spotify"
-            ></iframe>
-          </div>
-        </article>
-        <h3 class="music-subhead">Recent </h3>
-        <div class="music-history-grid">
-          <article class="music-history-item">
-            <p class="music-entry-date">May 26, 2026</p>
-          <div class="spotify-wrap spotify-wrap-small">
-            <iframe
-              src="https://open.spotify.com/embed/track/37eqNgyhBtTAYPLwpPEXcA?si=39d402baac07447e"
-              width="100%"
-              height="100%"
-              frameborder="0"
-              allowfullscreen=""
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-              loading="lazy"
-              title="Recent track one on Spotify"
-            ></iframe>
-          </div>
-          </article>
-          <article class="music-history-item">
-            <p class="music-entry-date">May 20, 2026</p>
-            <div class="spotify-wrap spotify-wrap-small">
+      <div class="personal-layout">
+        <div class="personal-column personal-column-left">
+          <section class="section card">
+            <h2>What I'm listening to (Last updated June 2, 2026)</h2>
+            <article class="music-history-item music-history-item-featured">
+              <div class="spotify-wrap spotify-wrap-featured">
+                <iframe
+                  src="https://open.spotify.com/embed/track/0Uf0SvwUrf02ucIt1d0Wos?si=467feecce8d84034"
+                  width="100%"
+                  height="300"
+                  frameborder="0"
+                  allowfullscreen=""
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                  title="Current favorite song on Spotify"
+                ></iframe>
+              </div>
+            </article>
+            <h3 class="music-subhead">Recent </h3>
+            <div class="music-history-grid">
+              <article class="music-history-item">
+                <p class="music-entry-date">May 26, 2026</p>
+                <div class="spotify-wrap spotify-wrap-small">
+                  <iframe
+                    src="https://open.spotify.com/embed/track/37eqNgyhBtTAYPLwpPEXcA?si=39d402baac07447e"
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                    title="Recent track one on Spotify"
+                  ></iframe>
+                </div>
+              </article>
+              <article class="music-history-item">
+                <p class="music-entry-date">May 20, 2026</p>
+                <div class="spotify-wrap spotify-wrap-small">
+                  <iframe
+                    src="https://open.spotify.com/embed/track/4cQIve5Heuo98gudSCPBCL?si=fec1775d1428491c"
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                    title="Recent track two on Spotify"
+                  ></iframe>
+                </div>
+              </article>
+              <article class="music-history-item">
+                <p class="music-entry-date">May 16, 2026</p>
+                <div class="spotify-wrap spotify-wrap-small">
+                  <iframe
+                    src="https://open.spotify.com/embed/track/2StAeGaKy1gBOllUoAjqxV?si=c299c73538f84e5c"
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                    title="Recent track three on Spotify"
+                  ></iframe>
+                </div>
+              </article>
+              <article class="music-history-item">
+                <p class="music-entry-date">May 13, 2026</p>
+                <div class="spotify-wrap spotify-wrap-small">
+                  <iframe
+                    src="https://open.spotify.com/embed/track/4XrWar13kLO1jr535AzKrQ?si=60ed9d8966fc4231"
+                    width="100%"
+                    height="100%"
+                    frameborder="0"
+                    allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"
+                    title="Recent track four on Spotify"
+                  ></iframe>
+                </div>
+              </article>
+            </div>
+
+            <div class="section-head music-more-head">
+              <button
+                id="more-songs-toggle"
+                class="section-head-link music-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="more-songs-playlist"
+              >
+                View more
+              </button>
+            </div>
+            <div id="more-songs-playlist" class="spotify-wrap spotify-wrap-playlist" hidden>
               <iframe
-                src="https://open.spotify.com/embed/track/4cQIve5Heuo98gudSCPBCL?si=fec1775d1428491c"
+                src="https://open.spotify.com/embed/playlist/2pxHZhlh8ywOaadtOxT7f4?si=d2f5041cbbf841a7"
                 width="100%"
-                height="100%"
+                height="352"
                 frameborder="0"
                 allowfullscreen=""
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
-                title="Recent track two on Spotify"
+                title="Spotify playlist"
               ></iframe>
             </div>
-          </article>
-          <article class="music-history-item">
-            <p class="music-entry-date">May 16, 2026</p>
-            <div class="spotify-wrap spotify-wrap-small">
+          </section>
+        </div>
+
+        <div class="personal-column personal-column-middle">
+          <section class="section card">
+            <div class="section-head">
+              <h2>Photos</h2>
+              <a class="section-head-link" href="photos-archive.html">View more</a>
+            </div>
+            <img
+              class="feature-image current-photo-image"
+              src="../assets/images/Shanghai.jpg"
+              alt="Shanghai sunset"
+            />
+            <p class="photo-caption">上海夕阳. 5/30/2026</p>
+          </section>
+          <section class="section card">
+            <div class="section-head">
+              <h2>Goodreads</h2>
+              <p>I am trying to read more books this summer.</p>
+              <a
+                class="section-head-link"
+                href="https://www.goodreads.com/user/show/166388904?ref=nav_profile_l"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View profile
+              </a>
+            </div>
+            <div id="gr_updates_widget">
               <iframe
-                src="https://open.spotify.com/embed/track/2StAeGaKy1gBOllUoAjqxV?si=c299c73538f84e5c"
+                sandbox
+                id="the_iframe"
+                src="https://goodreads.com/widgets/user_update_widget?height=250&num_updates=2&user=166388904&width=700"
                 width="100%"
-                height="100%"
+                height="180"
                 frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-                title="Recent track three on Spotify"
+                title="Goodreads updates widget"
               ></iframe>
+              <div id="gr_footer">
+                <a href="https://www.goodreads.com/" target="_blank" rel="noopener noreferrer">
+                  <img
+                    alt="Goodreads: Book reviews, recommendations, and discussion"
+                    src="https://s.gr-assets.com/images/layout/goodreads_logo_140.png"
+                  />
+                </a>
+              </div>
             </div>
-          </article>
-          <article class="music-history-item">
-            <p class="music-entry-date">May 13, 2026</p>
-            <div class="spotify-wrap spotify-wrap-small">
-              <iframe
-                src="https://open.spotify.com/embed/track/4XrWar13kLO1jr535AzKrQ?si=60ed9d8966fc4231"
-                width="100%"
-                height="100%"
-                frameborder="0"
-                allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"
-                title="Recent track four on Spotify"
-              ></iframe>
+          </section>
+        </div>
+
+        <div class="personal-column personal-column-right">
+          <section class="section card">
+            <div class="section-head">
+              <h2>Cooking</h2>
+              <a class="section-head-link" href="food.html">View more</a>
             </div>
-          </article>
-        </div>
+            <img
+              class="feature-image current-photo-image"
+              src="../assets/images/HongShaoRou.jpg"
+              alt="Hong shao rou"
+            />
+          </section>
 
-        <div class="section-head music-more-head">
-          <button
-            id="more-songs-toggle"
-            class="section-head-link music-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="more-songs-playlist"
-          >
-            View more
-          </button>
-        </div>
-        <div id="more-songs-playlist" class="spotify-wrap spotify-wrap-playlist" hidden>
-          <iframe
-            src="https://open.spotify.com/embed/playlist/2pxHZhlh8ywOaadtOxT7f4?si=d2f5041cbbf841a7"
-            width="100%"
-            height="352"
-            frameborder="0"
-            allowfullscreen=""
-            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-            loading="lazy"
-            title="Spotify playlist"
-          ></iframe>
-        </div>
-      </section>
+          <section class="section card">
+            <div class="section-head">
+              <h2>Panda</h2>
+              <a class="section-head-link" href="panda-archive.html">View more</a>
+            </div>
+            <img
+              class="feature-image current-photo-image"
+              src="../assets/images/Panda/Panda1.jpg"
+              alt="Panda photo 1"
+            />
+          </section>
 
-      <section class="section card">
-        <div class="section-head">
-          <h2>Photos</h2>
-          <a class="section-head-link" href="photos-archive.html">View more</a>
+          <section class="section card">
+            <div class="section-head">
+              <h2>Writings</h2>
+              <a class="section-head-link" href="posts.html">View more</a>
+            </div>
+            <ul id="recent-posts" class="post-list"></ul>
+          </section>
         </div>
-        <img
-          class="feature-image current-photo-image"
-          src="../assets/images/Shanghai.jpg"
-          alt="Shanghai sunset"
-        />
-        <p class="photo-caption">上海夕阳. 5/30/2026</p>
-      </section>
-      <section class="section card">
-        <div class="section-head">
-          <h2>Goodreads</h2>
-          <p>I am trying to read more books this summer.</p>
-          <a
-            class="section-head-link"
-            href="https://www.goodreads.com/user/show/166388904?ref=nav_profile_l"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            View profile
-          </a>
-        </div>
-        <div id="gr_updates_widget">
-          <iframe
-            sandbox
-            id="the_iframe"
-            src="https://goodreads.com/widgets/user_update_widget?height=250&num_updates=2&user=166388904&width=700"
-            width="100%"
-            height="180"
-            frameborder="0"
-            title="Goodreads updates widget"
-          ></iframe>
-          <div id="gr_footer">
-            <a href="https://www.goodreads.com/" target="_blank" rel="noopener noreferrer">
-              <img
-                alt="Goodreads: Book reviews, recommendations, and discussion"
-                src="https://s.gr-assets.com/images/layout/goodreads_logo_140.png"
-              />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section card">
-        <div class="section-head">
-          <h2>Cooking</h2>
-          <a class="section-head-link" href="food.html">View more</a>
-        </div>
-        <img
-          class="feature-image current-photo-image"
-          src="../assets/images/HongShaoRou.jpg"
-          alt="Hong shao rou"
-        />
-      </section>
-
-
-      <section class="section card">
-        <div class="section-head">
-          <h2>Panda</h2>
-          <a class="section-head-link" href="panda-archive.html">View more</a>
-        </div>
-        <img
-          class="feature-image current-photo-image"
-          src="../assets/images/Panda/Panda1.jpg"
-          alt="Panda photo 1"
-        />
-      </section>
-
-      <section class="section card">
-        <div class="section-head">
-          <h2>Writings</h2>
-          <a class="section-head-link" href="posts.html">View more</a>
-        </div>
-        <ul id="recent-posts" class="post-list"></ul>
-      </section>
+      </div>
     </main>
 
     <footer class="site-footer">

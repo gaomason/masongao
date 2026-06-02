@@ -82,6 +82,10 @@ a:hover {
   padding: 2.5rem 0 3rem;
 }
 
+.personal-page {
+  width: min(1400px, 96vw);
+}
+
 .home-main {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -102,6 +106,24 @@ a:hover {
 .professional-main-content,
 .professional-sidebar {
   min-width: 0;
+}
+
+.personal-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.personal-column {
+  min-width: 0;
+}
+
+@media (min-width: 1200px) {
+  .personal-layout {
+    grid-template-columns: minmax(300px, 1.2fr) minmax(260px, 1fr) minmax(260px, 1fr);
+    gap: 1rem;
+    align-items: start;
+  }
 }
 
 @media (min-width: 980px), (orientation: landscape) and (min-width: 860px) {
@@ -388,7 +410,7 @@ button.section-head-link {
 
 .spotify-wrap-featured iframe {
   display: block;
-  height: 280px;
+  height: 300px;
 }
 
 .spotify-wrap-small iframe {
