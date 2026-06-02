@@ -3,9 +3,9 @@ const posts = [
     title: "Slowing down",
     date: "2026-06-01",
     body: "Been a busy few days, I have been showing a friend around Shanghai, going to all the tourist spots." 
-    + "I'm quite tired, it's been day to night just walking around. It's fun, but I am really looking forward to having a day off."
-    + "I'm realizing that I prefer to just chill and slow down, especially when traveling. I think that is the goal for my trips this summer. "
-    + "I don't need to see everything, I just want to have a good time. I think I have changed."
+    + " I'm quite tired, it's been day to night just walking around. It's fun, but I am really looking forward to having a day off."
+    + " I'm realizing that I prefer to just chill and slow down, especially when traveling. I think that is the goal for my trips this summer. "
+    + " I don't need to see everything, I just want to have a good time. I think I have changed."
   },
   {
     title: "Hello World",
@@ -14,8 +14,12 @@ const posts = [
   }
 ];
 
-function createPostItem(post) {
+function createPostItem(post, options = {}) {
+  const { cardView = false } = options;
   const item = document.createElement("li");
+  if (cardView) {
+    item.classList.add("post-card");
+  }
 
   const title = document.createElement("h3");
   title.className = "post-title";
@@ -26,9 +30,27 @@ function createPostItem(post) {
   meta.textContent = formatDate(post.date);
 
   const body = document.createElement("p");
+  body.className = "post-excerpt";
   body.textContent = post.body;
 
   item.append(title, meta, body);
+
+  if (cardView) {
+    body.classList.add("is-clamped");
+    const toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = "post-expand-toggle";
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.textContent = "More";
+    toggle.addEventListener("click", () => {
+      const expanded = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!expanded));
+      body.classList.toggle("is-clamped", expanded);
+      toggle.textContent = expanded ? "More" : "Less";
+    });
+    item.appendChild(toggle);
+  }
+
   return item;
 }
 
@@ -46,6 +68,7 @@ function renderRecentPosts(targetId, count) {
   if (!target) {
     return;
   }
+  const cardView = target.classList.contains("post-list-cards");
 
   const recentPosts = posts.slice(0, count);
   if (recentPosts.length === 0) {
@@ -54,7 +77,7 @@ function renderRecentPosts(targetId, count) {
   }
 
   recentPosts.forEach((post) => {
-    target.appendChild(createPostItem(post));
+    target.appendChild(createPostItem(post, { cardView }));
   });
 }
 
