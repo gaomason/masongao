@@ -376,10 +376,19 @@ button.section-head-link {
   margin: 0;
 }
 
+.music-history-item-featured {
+  margin-bottom: 0.8rem;
+}
+
 .music-entry-date {
   margin: 0 0 0.35rem;
   color: var(--muted);
   font-size: 0.86rem;
+}
+
+.spotify-wrap-featured iframe {
+  display: block;
+  height: 352px;
 }
 
 .spotify-wrap-small iframe {
@@ -517,6 +526,10 @@ button.section-head-link {
   .pdf-embed {
     height: 72vh;
     min-height: 560px;
+  }
+
+  .spotify-wrap-featured iframe {
+    height: 300px;
   }
 
   #gr_updates_widget {
