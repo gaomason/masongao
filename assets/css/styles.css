@@ -122,7 +122,7 @@ a:hover {
   min-width: 0;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 900px) and (orientation: landscape) {
   .personal-layout {
     grid-template-columns: minmax(300px, 1.25fr) minmax(240px, 1fr) minmax(240px, 1fr);
     gap: 1.9rem;
@@ -184,7 +184,7 @@ a:hover {
   }
 
   .personal-column-left .music-subhead {
-    margin: 0.6rem 0 0.35rem;
+    margin: 0.45rem 0 0.35rem;
   }
 
   .personal-column-left .music-more-head {
@@ -192,7 +192,7 @@ a:hover {
   }
 
   .personal-layout .spotify-wrap-featured {
-    aspect-ratio: 7 / 3;
+    aspect-ratio: 5 / 2;
   }
 
   .personal-layout .spotify-wrap-small {
@@ -205,6 +205,17 @@ a:hover {
 
   .personal-layout #the_iframe {
     height: 180px;
+  }
+}
+
+@media (orientation: portrait) {
+  .personal-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .personal-body .container,
+  .personal-page {
+    width: min(var(--max-width), 92vw);
   }
 }
 
@@ -493,7 +504,7 @@ button.section-head-link {
 }
 
 .music-history-item-featured {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.2rem;
 }
 
 .music-entry-date {
@@ -503,7 +514,7 @@ button.section-head-link {
 }
 
 .spotify-wrap-featured {
-  aspect-ratio: 7 / 3;
+  aspect-ratio: 5 / 2;
 }
 
 .spotify-wrap-small {
@@ -709,7 +720,11 @@ button.section-head-link {
   }
 
   .spotify-wrap-featured {
-    aspect-ratio: 7 / 3;
+    aspect-ratio: 5 / 2;
+  }
+
+  .music-history-grid {
+    grid-template-columns: 1fr;
   }
 
   #gr_updates_widget {
