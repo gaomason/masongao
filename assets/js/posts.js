@@ -1,10 +1,18 @@
 const posts = [
   {
+    title: "My white hairs",
+    date: "2026-06-05",
+    body: "I just got a haircut, been overdue, last time I got it cut was the last week of march. The haircut was fine." 
+    + " I was just looking at myself in the mirror - I have a lot of new white hairs. Like at least 20. That's really funny."
+    + " I always get white hairs after a stressful period, a stressful semester. But never this many, usually 5-10."
+    + " I guess that's just how it's been. Eye bags, eye lines, also more noticable, though I've been sleeping well. Just getting older. Living."
+  },
+  {
     title: "Slowing down",
     date: "2026-06-01",
     body: "Been a busy few days, I have been showing a friend around Shanghai, going to all the tourist spots." 
     + " I'm quite tired, it's been day to night just walking around. It's fun, but I am really looking forward to having a day off."
-    + " I'm realizing that I prefer to just chill and slow down, especially when traveling. I think that is the goal for my trips this summer. "
+    + " I'm realizing that I prefer to just chill and slow down, especially when traveling. I think that is the goal for my trips this summer."
     + " I don't need to see everything, I just want to have a good time. I think I have changed."
   },
   {
