@@ -6,7 +6,7 @@ const posts = [
     + " Well, I thought about it a bit, and resolved all those reasons. Inconvenience: It doesn't really take that long. Ill intent: Probably not going to give cash, but I've been buying people meals/giving other essentials like socks."
     + " Bystanderism: I decided that to be an adult, meant to be someone who takes action. Miserliness: Well, I used to think that the 10 bucks I spent helping somebody was one less chipotle meal for myself. But, breaking it down by year instead, say if I donate once per week, around $10, then that amounts to ~$500 a year. That's not bad. A good price to pay for the soul."
     + " So, I've gone around a few times, asking dudes if they want anything from the grocery store, or chipotle, or whatever."
-    + "\n\nHonestly"
+    + "\n\nHonestly, I still subscribe to the view that human behavior is inherently selfish, that I myself, am selfish. So, I'm not entirely sure where my motives lie. I think it's mostly so that I can feel better about myself, so that I may be somebody I would admire. The alutrism aspect is quite secondary to me. Perhaps with action will come true motive, but I don't think that is likely for me. I guess I'll find out."
   },
   {
     title: "My white hairs",
