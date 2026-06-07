@@ -1,5 +1,14 @@
 const posts = [
   {
+    title: "Altruism",
+    date: "2026-06-07",
+    body: "Around two months ago, I started to donate to the homeless. I'm not sure why I wasn't before. It was a combination of inconvenience, fear of ill intent, bystanderism, and miserliness."
+    + " Well, I thought about it a bit, and resolved all those reasons. Inconvenience: It doesn't really take that long. Ill intent: Probably not going to give cash, but I've been buying people meals/giving other essentials like socks."
+    + " Bystanderism: I decided that to be an adult, meant to be someone who takes action. Miserliness: Well, I used to think that the 10 bucks I spent helping somebody was one less chipotle meal for myself. But, breaking it down by year instead, say if I donate once per week, around $10, then that amounts to ~$500 a year. That's not bad. A good price to pay for the soul."
+    + " So, I've gone around a few times, asking dudes if they want anything from the grocery store, or chipotle, or whatever."
+    + "\n\nHonestly"
+  },
+  {
     title: "My white hairs",
     date: "2026-06-05",
     body: "I just got a haircut, been overdue, last time I got it cut was the last week of march. The haircut was fine." 
@@ -37,9 +46,13 @@ function createPostItem(post, options = {}) {
   meta.className = "meta";
   meta.textContent = formatDate(post.date);
 
-  const body = document.createElement("p");
+  const body = document.createElement("div");
   body.className = "post-excerpt";
-  body.textContent = post.body;
+  post.body.split(/\n\n+/).filter(Boolean).forEach((paragraph) => {
+    const paragraphEl = document.createElement("p");
+    paragraphEl.textContent = paragraph.trim();
+    body.appendChild(paragraphEl);
+  });
 
   item.append(title, meta, body);
 
