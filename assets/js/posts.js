@@ -1,11 +1,20 @@
 const posts = [
   {
+    title: "Unasked tasks for those in pain",
+    date: "2026-06-15",
+    body: "I want to become proactive. But not just proactive. I think I already am quite proactive. I want to be able to consistently identify and act on small things that may make me uncomfortable."
+    +" Things like recognizing somebody is having a bad day, going through something, and instead of keeping my distance, asking them if they're OK. OK, perhaps that isn't the best approach for many people."
+    + " But doing something kind for them, like getting them a coffee. It is only through my own internal struggle where I have realized the pain and hurt people may carry with them day to day. And how those small actions may impact them."
+    + " I guess it's a double whammy of both identification and action. Many people hold it in very well. Not sure how to address this, but I may have to just do what I can."
+    + " And then action, the fear of awkwardness, overstepping. That is esasier. Simply act. And also the question of who. Obviously my friends. But what about aquaintances? Strangers? Those I dislike? Perhaps, everybody deserves some grace when they are struggling.."
+  },
+  {
     title: "Control and Irritability",
     date: "2026-06-13",
     body: "I inherited my irritability from my father. When I got to college, I thought I could solve it by hiding it, but then realized that was causing other problems in my life. I then just showed it, but generally made sure my expression was reasonable and calm."
     + " Well, I think now, I've changed again. I feel like little by little, it is leaving me. The things that are far away from me, strangers cutting me in line, or loudness, or whatever. I thought about it, and realized: What am I going to do about it?"
     + " Well, it's obviously not worth it to try to change things like that. The only thing you can do is not let it affect yourself. And since I've come to that mentality, well, I genuinely have been unbothered. Tranquility. I feel much more at peace."
-    + " It's a more difficult journey with things closer to me. Things that I feel I can control. It really is a control thing for me: If I feel I can influence the outcome, or if it's something worth trying to change, I think I still care about it."
+    + "\n\nIt's a more difficult journey with things closer to me. Things that I feel I can control. It really is a control thing for me: If I feel I can influence the outcome, or if it's something worth trying to change, I think I still care about it."
     + " But I think I'm on the path to tranquility, even with closer things. It seems I have learned, or am learning, that there are many things in life one cannot control. The only thing that is fully yours to control is your own response."
     + " Now I don't want to get too detached, indifferent. I hope to be able to care about things, but not let it affect me drastically. Live and move on."
   },
