@@ -15,7 +15,7 @@ const posts = [
     +" Things like recognizing somebody is having a bad day, going through something, and instead of keeping my distance, asking them if they're OK. OK, perhaps that isn't the best approach for many people."
     + " But doing something kind for them, like getting them a coffee. It is only through my own internal struggle where I have realized the pain and hurt people may carry with them day to day. And how those small actions may impact them."
     + " I guess it's a double whammy of both identification and action. Many people hold it in very well. Not sure how to address this, but I may have to just do what I can."
-    + " And then action, the fear of awkwardness, overstepping. That is esasier. Simply act. And also the question of who. Obviously my friends. But what about aquaintances? Strangers? Those I dislike? Perhaps, everybody deserves some grace when they are struggling.."
+    + " And then action, the fear of awkwardness, overstepping. That is easier. Simply act. And also the question of who. Obviously my friends. But what about aquaintances? Strangers? Those I dislike? Perhaps, everybody deserves some grace when they are struggling.."
   },
   {
     title: "Control and Irritability",
