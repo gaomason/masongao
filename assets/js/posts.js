@@ -1,7 +1,16 @@
 const posts = [
   {
+    title: "Taiwanese elders",
+    date: "2026-06-15",	
+    body: "For context, I've been on a cruise up the 长江to重庆. It's been nice, but also, wasn't expecting that the cruise is 95% the elderly, haha. They say old people are the easiest to talk to, well, I didn't really talk to many, just been chilling, but I have talked to this group of four from 台南 who are in my assigned dining group."
+    +" At first, I saw I was put with the Taiwanese group and thought, \"Wow, almost like fate is laughing at me\". Lots of reminders: The linguistic quirks, 台语, etc."
+    +"\n\nBut one of them started to strike up a conversation with me, and we've talked a little since. That is another thing I should be getting better at: making the first move. Although previously, I think I had valid reasons to just chill alone."
+    +"\n\nYeah I mean, I just had my last dinner here, so I just asked them when they were leaving China, and then we ended up talking for half an hour about Taiwan, China, housing prices, TSMC, etc. Pleasant conversation."
+    +" I think I've removed most of the thorns now. Conversation with strangers can be rewarding. I'll never see them again, don't even know their names, but I'll remember this conversation. Many people can leave a small mark when they pass your world." 
+  },
+  {
     title: "Unasked tasks for those in pain",
-    date: "2026-06-15",
+    date: "2026-06-14",
     body: "I want to become proactive. But not just proactive. I think I already am quite proactive. I want to be able to consistently identify and act on small things that may make me uncomfortable."
     +" Things like recognizing somebody is having a bad day, going through something, and instead of keeping my distance, asking them if they're OK. OK, perhaps that isn't the best approach for many people."
     + " But doing something kind for them, like getting them a coffee. It is only through my own internal struggle where I have realized the pain and hurt people may carry with them day to day. And how those small actions may impact them."
