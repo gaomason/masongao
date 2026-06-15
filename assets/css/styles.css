@@ -335,6 +335,10 @@ h2 {
   opacity: 0.45;
 }
 
+a.profile-icon-link.profile-icon-muted {
+  cursor: pointer;
+}
+
 .profile-icon-muted:hover {
   transform: none;
   background: #ffffff;
