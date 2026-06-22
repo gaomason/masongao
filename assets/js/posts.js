@@ -1,5 +1,13 @@
 const posts = [
   {
+    title: "More on Control and Irritability",
+    date: "2026-06-22",
+    body: "I think I have reached a good conclusion that I should aim for. I've realized that control and irritability can be separated. I don't want to be a pushover, but that doesn't mean I have to see things as annoying to take action on them."
+    + "For example, if somebody does something to negatively impact me, I hope to reach the point where I simply take action, without feeling absolutely irritated."
+    + "\n\nAction does not need to be caused by irritation. It can simply be: This negatively impacts me, thus I will do this to avoid/change it. Notice how irritation is nowhere to be found."
+    + "\n\nI hope to achieve this, even for my closest relationships. Although, I also do fear, that with the elimination of such tempers, it may indirectly cause more detachment. Will have to be careful." 
+  },
+  {
     title: "Taiwanese elders",
     date: "2026-06-15",	
     body: "For context, I've been on a cruise up the 长江to重庆. It's been nice, but also, wasn't expecting that the cruise is 95% the elderly, haha. They say old people are the easiest to talk to, well, I didn't really talk to many, just been chilling, but I have talked to this group of four from 台南 who are in my assigned dining group."
