@@ -220,7 +220,7 @@
     <script src="../assets/js/posts.js"></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
-      renderRecentPosts("recent-posts", 1);
+      renderRecentPosts("recent-posts", 1).catch(console.error);
       const moreSongsToggle = document.getElementById("more-songs-toggle");
       const moreSongsPlaylist = document.getElementById("more-songs-playlist");
       const goodreadsIframe = document.getElementById("the_iframe");

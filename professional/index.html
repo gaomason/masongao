@@ -78,7 +78,7 @@
     <script src="../assets/js/research-log.js"></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
-      renderResearchLog("research-log", 1);
+      renderResearchLog("research-log", 1).catch(console.error);
     </script>
   </body>
 </html>

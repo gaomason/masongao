@@ -39,7 +39,7 @@
     <script src="../assets/js/posts.js"></script>
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
-      renderAllPosts("all-posts");
+      renderAllPosts("all-posts").catch(console.error);
     </script>
   </body>
 </html>
