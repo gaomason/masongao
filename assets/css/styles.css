@@ -749,3 +749,9 @@ button.section-head-link {
     width: 100%;
   }
 }
+
+iframe[src*="spotify.com"] {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0 !important;
+}
