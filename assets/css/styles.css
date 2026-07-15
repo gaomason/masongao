@@ -191,16 +191,16 @@ a:hover {
     margin: 0.45rem 0 1rem;
   }
 
-  .personal-layout .spotify-wrap-featured {
-    aspect-ratio: 5 / 2;
+  .personal-layout .spotify-wrap-featured iframe {
+    height: 352px;
   }
 
-  .personal-layout .spotify-wrap-small {
-    aspect-ratio: 5 / 1;
+  .personal-layout .spotify-wrap-small iframe {
+    height: 152px;
   }
 
-  .personal-layout .spotify-wrap-playlist {
-    aspect-ratio: 5 / 6;
+  .personal-layout .spotify-wrap-playlist iframe {
+    height: 380px;
   }
 
   .personal-layout #the_iframe {
@@ -461,18 +461,14 @@ button.section-head-link {
 
 .spotify-wrap {
   border: none;
-  border-radius: 0;
+  border-radius: 12px;
   overflow: hidden;
-  position: relative;
   width: 100%;
   line-height: 0;
 }
 
 .spotify-wrap iframe {
-  position: absolute;
-  inset: 0;
   width: 100%;
-  height: 100%;
   display: block;
   border: 0;
 }
@@ -517,16 +513,16 @@ button.section-head-link {
   font-size: 0.86rem;
 }
 
-.spotify-wrap-featured {
-  aspect-ratio: 5 / 2;
+.spotify-wrap-featured iframe {
+  height: 352px;
 }
 
-.spotify-wrap-small {
-  aspect-ratio: 5 / 1;
+.spotify-wrap-small iframe {
+  height: 152px;
 }
 
-.spotify-wrap-playlist {
-  aspect-ratio: 5 / 6;
+.spotify-wrap-playlist iframe {
+  height: 380px;
 }
 
 .spotify-wrap-playlist[hidden] {
@@ -731,8 +727,8 @@ button.section-head-link {
     min-height: 560px;
   }
 
-  .spotify-wrap-featured {
-    aspect-ratio: 5 / 2;
+  .spotify-wrap-featured iframe {
+    height: 352px;
   }
 
   .music-history-grid {
