@@ -96,8 +96,8 @@ a:hover {
   gap: 1.25rem;
 }
 
-.home-main > .hero,
-.home-main > .home-news {
+.home-main>.hero,
+.home-main>.home-news {
   margin: 0;
 }
 
@@ -219,13 +219,14 @@ a:hover {
   }
 }
 
-@media (min-width: 980px), (orientation: landscape) and (min-width: 860px) {
+@media (min-width: 980px),
+(orientation: landscape) and (min-width: 860px) {
   .home-main {
     grid-template-columns: minmax(0, 1fr) minmax(290px, 360px);
     align-items: start;
   }
 
-  .home-main > .home-news {
+  .home-main>.home-news {
     margin-top: 2.5rem;
   }
 
@@ -609,7 +610,7 @@ button.section-head-link {
   margin: 0;
 }
 
-.post-excerpt p + p {
+.post-excerpt p+p {
   margin-top: 0.75rem;
 }
 
@@ -748,10 +749,4 @@ button.section-head-link {
   #the_iframe {
     width: 100%;
   }
-}
-
-iframe[src*="spotify.com"] {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 0 !important;
 }
