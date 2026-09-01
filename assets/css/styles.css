@@ -616,18 +616,21 @@ button.section-head-link {
 
 .post-excerpt img,
 .research-log-excerpt img {
-  max-width: 100%;
-  max-height: 480px;
+  max-width: min(100%, 360px);
+  max-height: 320px;
   width: auto;
   height: auto;
   border-radius: 8px;
   display: block;
-  margin: 1rem 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  margin: 1.25rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border: 1px solid var(--line);
 }
 
 .post-list-cards .post-excerpt img {
-  max-height: 160px;
+  max-width: 100%;
+  max-height: 120px;
+  object-fit: cover;
   margin: 0.5rem 0;
 }
 
