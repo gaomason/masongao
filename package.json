@@ -3,5 +3,8 @@
   "private": true,
   "scripts": {
     "build": "node scripts/build-content.mjs"
+  },
+  "dependencies": {
+    "marked": "^14.1.2"
   }
 }

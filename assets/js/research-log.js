@@ -29,11 +29,10 @@ function createResearchLogItem(entry) {
 
   item.append(title, meta);
 
-  entry.body.split(/\n\n+/).filter(Boolean).forEach((paragraph) => {
-    const bodyParagraph = document.createElement("p");
-    bodyParagraph.textContent = paragraph.trim();
-    item.appendChild(bodyParagraph);
-  });
+  const bodyContainer = document.createElement("div");
+  bodyContainer.className = "research-log-excerpt";
+  bodyContainer.innerHTML = entry.body;
+  item.appendChild(bodyContainer);
 
   return item;
 }

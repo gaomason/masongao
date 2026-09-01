@@ -33,11 +33,7 @@ function createPostItem(post, options = {}) {
 
   const body = document.createElement("div");
   body.className = "post-excerpt";
-  post.body.split(/\n\n+/).filter(Boolean).forEach((paragraph) => {
-    const paragraphEl = document.createElement("p");
-    paragraphEl.textContent = paragraph.trim();
-    body.appendChild(paragraphEl);
-  });
+  body.innerHTML = post.body;
 
   item.append(title, meta, body);
 

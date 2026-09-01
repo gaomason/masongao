@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { marked } from "marked";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.join(__dirname, "..");
@@ -32,7 +33,7 @@ function parseMarkdownFile(filePath) {
   return {
     title: frontmatter.title,
     date: frontmatter.date,
-    body: match[2].trim()
+    body: marked.parse(match[2].trim())
   };
 }
 
