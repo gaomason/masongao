@@ -3,6 +3,11 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { marked } from "marked";
 
+marked.use({
+  breaks: true,
+  gfm: true
+});
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.join(__dirname, "..");
 

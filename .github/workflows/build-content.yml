@@ -8,6 +8,7 @@ on:
       - content/**
       - scripts/**
       - package.json
+      - .github/workflows/**
   workflow_dispatch:
 
 permissions:
