@@ -2,11 +2,11 @@
   {
     "title": "Update #2",
     "date": "2026-06-17",
-    "body": "Currently traveling, so won't be doing much\n\n1. So I have a rough implementation of an adapted MCLU update with some new ideas incorporated. The only problem is that there are many ideas that I want to test to see if they impact efficiency, and they may all be corerelated to each other. Need to implement a lot more. And also compile a final test set (Which is also very annoying)\n\n2. Also showed that shortest-path problems with merge oracle can be solved in polynomial merges, given a specific merge oracle. Otherwise, showed it's not possible. Now moving on to Boolean Linear optimization, which is much more difficult."
+    "body": "<p>Currently traveling, so won&#39;t be doing much</p>\n<ol>\n<li><p>So I have a rough implementation of an adapted MCLU update with some new ideas incorporated. The only problem is that there are many ideas that I want to test to see if they impact efficiency, and they may all be corerelated to each other. Need to implement a lot more. And also compile a final test set (Which is also very annoying)</p>\n</li>\n<li><p>Also showed that shortest-path problems with merge oracle can be solved in polynomial merges, given a specific merge oracle. Otherwise, showed it&#39;s not possible. Now moving on to Boolean Linear optimization, which is much more difficult.</p>\n</li>\n</ol>\n"
   },
   {
     "title": "Summer Research Update",
     "date": "2026-05-28",
-    "body": "A brief update on what I'm working on this summer.\n\n1. Still working on improving QSopt_ex with different approaches to MCLU updates. I have some good ideas, but the devil is in the implementation.\n\n2. Working on a new problem that is quite interesting: for a wide body of optimization problems, if you are only able to merge potential solutions, can you still solve the problem in polynomially many merges?"
+    "body": "<p>A brief update on what I&#39;m working on this summer.</p>\n<ol>\n<li><p>Still working on improving QSopt_ex with different approaches to MCLU updates. I have some good ideas, but the devil is in the implementation.</p>\n</li>\n<li><p>Working on a new problem that is quite interesting: for a wide body of optimization problems, if you are only able to merge potential solutions, can you still solve the problem in polynomially many merges?</p>\n</li>\n</ol>\n"
   }
 ]
